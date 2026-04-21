@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Packages - Ascend Web Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="40" height="40">
+                        <polygon points="50,15 65,25 65,45 50,55 35,45 35,25" fill="url(#logoGrad1)"/>
+                        <polygon points="30,50 45,60 45,80 30,90 15,80 15,60" fill="url(#logoGrad2)"/>
+                        <polygon points="70,50 85,60 85,80 70,90 55,80 55,60" fill="url(#logoGrad3)"/>
+                        <defs>
+                            <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#84cc16;stop-opacity:0.7" />
+                            </linearGradient>
+                            <linearGradient id="logoGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.7" />
+                                <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">ASCEND <span class="logo-subtext">WEB AGENCY</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header" style="padding-top: 120px; padding-bottom: 40px; text-align: center; background: var(--dark-light);">
+        <h1 class="section-title">Pricing & Web Packages</h1>
+        <p class="section-subtitle">Transparent pricing, straightforward packages, powered by Stripe.</p>
+    </div>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" style="padding: 4rem 0 8rem;">
+        <div class="container">
+            <div class="pricing-grid">
+                
+                <!-- Tier 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Standard Website</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">600</span>
+                        </div>
+                        <p>A great looking, fully responsive website.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Professional Design</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Mobile Responsive</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Basic SEO Setup</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Contact Form</li>
+                        <li class="disabled"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> Backend Features</li>
+                    </ul>
+                    <!-- YOU MUST UPDATE THIS WITH YOUR STRIPE PAYMENT LINK -->
+                    <a href="https://buy.stripe.com/test_placeholder1" class="btn btn-secondary btn-full">Order Standard Plan</a>
+                </div>
+
+                <!-- Tier 2 -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Advanced Website + Backend</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">900</span>
+                        </div>
+                        <p>For more complex needs with backend features.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Premium Professional Design</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Backend Integrations</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> More Complex Features</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Advanced SEO Setup</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> CMS Integration</li>
+                    </ul>
+                    <!-- YOU MUST UPDATE THIS WITH YOUR STRIPE PAYMENT LINK -->
+                    <a href="https://buy.stripe.com/test_placeholder2" class="btn btn-primary btn-full">Order Advanced Plan</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Social Media Management</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">150</span>
+                            <span style="font-size: 1rem; color: var(--text-light); margin-top: auto; margin-bottom: 0.5rem;">/mo</span>
+                        </div>
+                        <p>We manage your socials to drive traffic.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Content Creation</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Scheduled Posting</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Community Engagement</li>
+                        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Strategy Sessions</li>
+                        <li class="disabled"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> Website Included</li>
+                    </ul>
+                    <!-- YOU MUST UPDATE THIS WITH YOUR STRIPE PAYMENT LINK -->
+                    <a href="https://buy.stripe.com/test_placeholder3" class="btn btn-secondary btn-full">Subscribe Monthly</a>
+                </div>
+
+            </div>
+            
+            <div class="custom-plan" style="margin-top: 4rem; text-align: center; background: rgba(20, 184, 166, 0.05); border: 1px solid rgba(20, 184, 166, 0.2); padding: 3rem; border-radius: 20px;">
+                <h3>Need something completely custom?</h3>
+                <p style="margin: 1rem 0 2rem; color: var(--text-light);">We also offer custom quotes for specialized applications, enterprise portals, or complex backend requirements.</p>
+                <a href="contact.html" class="btn btn-secondary">Contact for Custom Quote</a>
+            </div>
+            
+            <div class="stripe-trust" style="margin-top: 2rem; text-align: center;">
+                <p style="color: var(--gray); font-size: 0.9rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    Secure payments powered by Stripe
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 100 100" width="32" height="32">
+                                <polygon points="50,15 65,25 65,45 50,55 35,45 35,25" fill="url(#logoGrad1)"/>
+                                <polygon points="30,50 45,60 45,80 30,90 15,80 15,60" fill="url(#logoGrad2)"/>
+                                <polygon points="70,50 85,60 85,80 70,90 55,80 55,60" fill="url(#logoGrad3)"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">ASCEND <span class="logo-subtext">WEB AGENCY</span></span>
+                    </a>
+                    <p>Ascending digital experiences, one website at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="https://tally.so/r/2EXdoA" target="_blank">Get Quote</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
