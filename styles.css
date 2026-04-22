@@ -887,6 +887,35 @@ body {
 .footer-brand p {
     color: rgba(255,255,255,0.4);
     margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 260px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+}
+
+.social-link {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(20,184,166,0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.social-link:hover {
+    border-color: rgba(20,184,166,0.5);
+    color: var(--teal);
+    background: rgba(20,184,166,0.08);
+    transform: translateY(-2px);
 }
 
 .footer-column h4 {
