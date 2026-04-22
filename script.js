@@ -124,3 +124,64 @@ if (gradientText) {
 console.log('%c🚀 Ascend Web Agency', 'font-size: 20px; font-weight: bold; background: linear-gradient(135deg, #14b8a6, #84cc16); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
 console.log('%cReady to elevate your digital presence?', 'font-size: 14px; color: #14b8a6;');
 
+// =====================
+// PAGE TRANSITION LOADER
+// =====================
+(function () {
+    const loader = document.createElement('div');
+    loader.id = 'page-loader';
+    loader.innerHTML = '<div class="ldr-ring"></div><span class="ldr-label">ASCEND</span>';
+    document.body.appendChild(loader);
+
+    const s = document.createElement('style');
+    s.textContent = `
+        #page-loader {
+            position: fixed; inset: 0;
+            background: #0a0f0d;
+            z-index: 99999;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center; gap: 1.25rem;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        #page-loader.out { opacity: 0; pointer-events: none; }
+        .ldr-ring {
+            width: 48px; height: 48px;
+            border: 3px solid rgba(20,184,166,0.15);
+            border-top-color: #14b8a6;
+            border-radius: 50%;
+            animation: ldrSpin 0.75s linear infinite;
+        }
+        .ldr-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem; font-weight: 800;
+            letter-spacing: 0.28em;
+            background: linear-gradient(135deg, #14b8a6, #84cc16);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        @keyframes ldrSpin { to { transform: rotate(360deg); } }
+    `;
+    document.head.appendChild(s);
+
+    // Fade out on page load
+    window.addEventListener('load', () => {
+        setTimeout(() => loader.classList.add('out'), 120);
+    });
+
+    // Intercept internal link clicks
+    document.addEventListener('click', (e) => {
+        const a = e.target.closest('a');
+        if (!a) return;
+        const href = a.getAttribute('href');
+        if (!href) return;
+        const isInternal = !href.startsWith('http') && !href.startsWith('#') &&
+                           !href.startsWith('mailto') && !href.startsWith('tel') &&
+                           a.getAttribute('target') !== '_blank';
+        if (!isInternal) return;
+        e.preventDefault();
+        loader.classList.remove('out');
+        setTimeout(() => { window.location.href = href; }, 380);
+    });
+})();

@@ -31,6 +31,12 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    animation: pageIn 0.35s ease;
+}
+
+@keyframes pageIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 .container {
@@ -67,6 +73,17 @@ body {
 /* legacy .nav-container — kept so pages without rebuild still work */
 .nav-container {
     display: contents;
+}
+
+.logo-wordmark {
+    font-size: 1.15rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--teal), var(--lime));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
 }
 
 .logo {
@@ -233,7 +250,7 @@ body {
     max-width: 1200px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.35fr;
     gap: 4rem;
     align-items: center;
     position: relative;
@@ -316,8 +333,11 @@ body {
 
 .hero-visual {
     position: relative;
-    height: 500px;
+    height: 560px;
     animation: fadeIn 1s ease 0.3s both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .floating-card {
@@ -1229,7 +1249,7 @@ body {
     overflow: visible;
     box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
     width: 100%;
-    max-width: 440px;
+    max-width: 560px;
     animation: fadeIn 1s ease 0.4s both;
 }
 
@@ -1592,7 +1612,7 @@ body {
 }
 
 .testimonial-card {
-    background: var(--white);
+    background: var(--card-bg);
     border: 1px solid rgba(20,184,166,0.15);
     border-radius: 24px;
     padding: 2.5rem;
@@ -1600,7 +1620,7 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 .testimonial-card:hover {
@@ -1611,7 +1631,7 @@ body {
 
 .testimonial-featured {
     border-color: rgba(20,184,166,0.3);
-    box-shadow: 0 8px 30px rgba(20,184,166,0.08);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
 .testimonial-stars {
