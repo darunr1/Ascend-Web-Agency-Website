@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ascend Web Agency - Ascend Your Digital Presence</title>
+    <meta name="description" content="Ascend Web Agency crafts high-performance, stunning websites that grow your business. Custom development, e-commerce, and social media management.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,50 +12,49 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 100 100" width="40" height="40">
-                        <polygon points="50,15 65,25 65,45 50,55 35,45 35,25" fill="url(#logoGrad1)"/>
-                        <polygon points="30,50 45,60 45,80 30,90 15,80 15,60" fill="url(#logoGrad2)"/>
-                        <polygon points="70,50 85,60 85,80 70,90 55,80 55,60" fill="url(#logoGrad3)"/>
-                        <defs>
-                            <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1" />
-                            </linearGradient>
-                            <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#84cc16;stop-opacity:0.7" />
-                            </linearGradient>
-                            <linearGradient id="logoGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.7" />
-                                <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <span class="logo-text">ASCEND <span class="logo-subtext">WEB AGENCY</span></span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="navbar" id="main-navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 100 100" width="36" height="36">
+                    <polygon points="50,15 65,25 65,45 50,55 35,45 35,25" fill="url(#logoGrad1)"/>
+                    <polygon points="30,50 45,60 45,80 30,90 15,80 15,60" fill="url(#logoGrad2)"/>
+                    <polygon points="70,50 85,60 85,80 70,90 55,80 55,60" fill="url(#logoGrad3)"/>
+                    <defs>
+                        <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#84cc16;stop-opacity:0.7" />
+                        </linearGradient>
+                        <linearGradient id="logoGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.7" />
+                            <stop offset="100%" style="stop-color:#84cc16;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
+            <span class="logo-text">ASCEND <span class="logo-subtext">WEB AGENCY</span></span>
+        </a>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="https://tally.so/r/2EXdoA" target="_blank" class="nav-get-quote">Get Quote</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Hero Section — Dark -->
+    <section id="home" class="hero hero-dark">
         <div class="hero-background">
             <div class="gradient-orb orb-1"></div>
             <div class="gradient-orb orb-2"></div>
@@ -62,32 +62,106 @@
         </div>
         <div class="hero-content">
             <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for new projects
+                </div>
                 <h1 class="hero-title">
-                    <span class="gradient-text">Ascend</span> Your Digital Presence
+                    We Build Websites That <span class="gradient-text">Actually Convert</span>
                 </h1>
                 <p class="hero-subtitle">
-                    We craft stunning, high-performance websites that transform your business and captivate your audience.
+                    Ascend Web Agency turns your vision into a fast, polished, revenue-driving website. Custom-built by a team of frontend and backend developers. No templates, no shortcuts.
                 </p>
                 <div class="hero-buttons">
-                    <a href="pricing.html" class="btn btn-primary">Choose a Plan</a>
-                    <a href="portfolio.html" class="btn btn-secondary">View Our Work</a>
+                    <a href="portfolio.html" class="btn btn-primary btn-large" id="hero-view-work">View Our Work</a>
+                    <a href="https://tally.so/r/2EXdoA" target="_blank" class="btn btn-outline-light btn-large" id="hero-get-quote">Get a Free Quote</a>
+                </div>
+                <div class="hero-social-proof">
+                    <div class="star-row">
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <span class="proof-text">Trusted by growing businesses</span>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-content"></div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-content"></div>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-content"></div>
+                <!-- Animated UI Mockup -->
+                <div class="ui-mockup">
+                    <div class="mockup-topbar">
+                        <div class="topbar-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="topbar-url">ascendwebagency.com</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-nav-bar">
+                            <div class="mnav-logo"></div>
+                            <div class="mnav-links">
+                                <div class="mnav-link"></div>
+                                <div class="mnav-link"></div>
+                                <div class="mnav-link"></div>
+                                <div class="mnav-cta"></div>
+                            </div>
+                        </div>
+                        <div class="mockup-hero-area">
+                            <div class="mhero-text">
+                                <div class="mhero-line wide"></div>
+                                <div class="mhero-line medium"></div>
+                                <div class="mhero-btn"></div>
+                            </div>
+                            <div class="mhero-img"></div>
+                        </div>
+                        <div class="mockup-cards-row">
+                            <div class="mcard"><div class="mcard-icon"></div><div class="mcard-line"></div></div>
+                            <div class="mcard"><div class="mcard-icon"></div><div class="mcard-line"></div></div>
+                            <div class="mcard"><div class="mcard-icon"></div><div class="mcard-line"></div></div>
+                        </div>
+                    </div>
+                    <!-- Floating badges on the mockup -->
+                    <div class="mockup-badge badge-speed">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2.5" width="16" height="16"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        <span>98 Performance</span>
+                    </div>
+                    <div class="mockup-badge badge-mobile">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#84cc16" stroke-width="2.5" width="16" height="16"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+                        <span>Mobile Ready</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
             <div class="mouse">
                 <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">2wk</span>
+                    <span class="stat-label">Avg. Turnaround</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
             </div>
         </div>
     </section>
@@ -130,7 +204,7 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="services.html" class="btn btn-secondary">Explore All Services</a>
+                <a href="services.html" class="btn btn-secondary" id="explore-services-btn">Explore All Services</a>
             </div>
         </div>
     </section>
@@ -162,15 +236,26 @@
                                         <span></span>
                                         <span></span>
                                     </div>
+                                    <div class="browser-url-bar">langsontraders.netlify.app</div>
                                 </div>
-                                <div class="browser-content">
-                                    <div class="mockup-content">
-                                        <div class="mockup-header"></div>
-                                        <div class="mockup-grid">
-                                            <div class="mockup-card"></div>
-                                            <div class="mockup-card"></div>
-                                            <div class="mockup-card"></div>
+                                <div class="browser-content lst-theme">
+                                    <div class="lst-mockup-nav"></div>
+                                    <div class="lst-mockup-hero">
+                                        <div class="lst-hero-text">
+                                            <div class="lst-line big"></div>
+                                            <div class="lst-line small"></div>
+                                            <div class="lst-btn"></div>
                                         </div>
+                                        <div class="lst-hero-products">
+                                            <div class="lst-product"></div>
+                                            <div class="lst-product"></div>
+                                        </div>
+                                    </div>
+                                    <div class="lst-mockup-grid">
+                                        <div class="lst-card"></div>
+                                        <div class="lst-card"></div>
+                                        <div class="lst-card"></div>
+                                        <div class="lst-card"></div>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +264,78 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="portfolio.html" class="btn btn-primary">View Full Portfolio</a>
+                <a href="portfolio.html" class="btn btn-primary" id="view-portfolio-btn">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real feedback from real businesses we've helped grow</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Ascend completely transformed how our store looks online. We went from having basically no web presence to something that actually looks professional. Customers mention the website all the time now — it's made a real difference for us."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #14b8a6, #84cc16);">
+                            <span>LS</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Lang Son Traders</strong>
+                            <span>Martial Arts Equipment Store</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card testimonial-featured">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="#f59e0b" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <blockquote class="testimonial-quote">
+                        "Honestly didn't expect this level of quality for the price. The site they built for my repair business is clean, loads fast, and gets us calls from Google. These guys know what they're doing — fast turnaround, great communication, no headaches."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">
+                            <span>ER</span>
+                        </div>
+                        <div class="author-info">
+                            <strong>Enes Repair Co.</strong>
+                            <span>Local Repair Services Business</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-banner-inner">
+                <div class="cta-banner-text">
+                    <h2>Ready to build something great?</h2>
+                    <p>Let's talk about what you need — no obligation, no pushy sales calls.</p>
+                </div>
+                <div class="cta-banner-actions">
+                    <a href="https://tally.so/r/2EXdoA" target="_blank" class="btn btn-primary btn-large" id="cta-get-quote">Get a Free Quote</a>
+                    <a href="pricing.html" class="btn btn-outline-dark" id="cta-see-pricing">See Pricing</a>
+                </div>
             </div>
         </div>
     </section>
