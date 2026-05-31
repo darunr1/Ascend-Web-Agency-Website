@@ -579,6 +579,45 @@ window.addEventListener('load', () => {
   var masterGroup = new THREE.Group();
   scene.add(masterGroup);
 
+  /* Rotating hero object: faceted crystal orb instead of a tube/knot shape */
+  var crystalGroup = new THREE.Group();
+  crystalGroup.position.set(4.2, 0.15, -2.4);
+  masterGroup.add(crystalGroup);
+
+  var crystalGeo = new THREE.IcosahedronGeometry(2.65, 1);
+  var crystalFill = new THREE.MeshBasicMaterial({
+    color: 0x4f6ef7,
+    transparent: true,
+    opacity: 0.055,
+    depthWrite: false
+  });
+  var crystal = new THREE.Mesh(crystalGeo, crystalFill);
+  crystalGroup.add(crystal);
+
+  var crystalEdgeMat = new THREE.LineBasicMaterial({
+    color: 0x4f6ef7,
+    transparent: true,
+    opacity: 0.24
+  });
+  var crystalEdges = new THREE.LineSegments(new THREE.EdgesGeometry(crystalGeo), crystalEdgeMat);
+  crystalGroup.add(crystalEdges);
+
+  var coreGeo = new THREE.OctahedronGeometry(1.15, 0);
+  var coreFill = new THREE.MeshBasicMaterial({
+    color: 0x38bdf8,
+    transparent: true,
+    opacity: 0.04,
+    depthWrite: false
+  });
+  var core = new THREE.Mesh(coreGeo, coreFill);
+  crystalGroup.add(core);
+
+  var coreEdges = new THREE.LineSegments(
+    new THREE.EdgesGeometry(coreGeo),
+    new THREE.LineBasicMaterial({ color: 0x38bdf8, transparent: true, opacity: 0.26 })
+  );
+  crystalGroup.add(coreEdges);
+
   /* ────────────────────────────────────────────────────
      1. PERSPECTIVE GRID — extends into depth
   ──────────────────────────────────────────────────── */
@@ -756,6 +795,13 @@ window.addEventListener('load', () => {
     renderer.setSize(w, h);
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
+    if (w < 700) {
+      crystalGroup.position.set(2.35, 0.2, -2.7);
+      crystalGroup.scale.setScalar(0.78);
+    } else {
+      crystalGroup.position.set(4.2, 0.15, -2.4);
+      crystalGroup.scale.setScalar(1);
+    }
   }
   window.addEventListener('resize', resize);
   resize();
@@ -777,6 +823,14 @@ window.addEventListener('load', () => {
     /* Gentle parallax on master group */
     masterGroup.rotation.y += (smx * 0.045 - masterGroup.rotation.y) * 0.04;
     masterGroup.rotation.x += (-smy * 0.025 - masterGroup.rotation.x) * 0.04;
+
+    /* Balanced rotating crystal shape */
+    crystalGroup.rotation.y += 0.0032;
+    crystalGroup.rotation.x = Math.sin(clock * 0.45) * 0.12;
+    crystalGroup.rotation.z += 0.0014;
+    core.rotation.y -= 0.0045;
+    core.rotation.x += 0.0020;
+    coreEdges.rotation.copy(core.rotation);
 
     /* Slow camera drift — cinematic float */
     camera.position.y = 2.5 + Math.sin(clock * 0.18) * 0.18;
