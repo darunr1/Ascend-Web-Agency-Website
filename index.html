@@ -44,8 +44,8 @@ body{font-family:var(--sans);background:var(--bg);color:var(--silver);overflow-x
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.75rem 5rem;display:flex;align-items:center;justify-content:space-between;transition:padding 0.4s ease,background 0.4s ease,border-color 0.4s;border-bottom:1px solid transparent}
 .nav.stuck{padding:1.1rem 5rem;background:rgba(6,6,8,0.82);backdrop-filter:blur(20px) saturate(160%);border-bottom-color:var(--line)}
 .nav-logo{font-family:var(--serif);font-size:1.25rem;letter-spacing:0.01em;color:var(--white);text-decoration:none;display:flex;align-items:center;gap:0.65rem}
-.nav-logo-mark{width:28px;height:28px;border-radius:7px;background:var(--blue);display:flex;align-items:center;justify-content:center}
-.nav-logo-mark svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.nav-logo-mark{width:36px;height:36px;display:flex;align-items:center;justify-content:center}
+.nav-logo-mark img{width:100%;height:100%;display:block;object-fit:contain}
 .nav-links{display:flex;gap:2.5rem;list-style:none}
 .nav-links a{font-size:0.78rem;font-weight:400;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s}
 .nav-links a:hover{color:var(--white)}
@@ -228,8 +228,8 @@ body{font-family:var(--sans);background:var(--bg);color:var(--silver);overflow-x
 footer{padding:4rem 5rem;border-top:1px solid var(--line);position:relative;z-index:2}
 .foot-row{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:2rem}
 .foot-logo{font-family:var(--serif);font-size:1rem;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:0.6rem}
-.foot-logo-m{width:22px;height:22px;border-radius:5px;background:var(--blue);display:flex;align-items:center;justify-content:center}
-.foot-logo-m svg{width:11px;height:11px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.foot-logo-m{width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+.foot-logo-m img{width:100%;height:100%;display:block;object-fit:contain}
 .foot-links{display:flex;gap:2rem;flex-wrap:wrap}
 .foot-links a{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);text-decoration:none;transition:color 0.2s}
 .foot-links a:hover{color:var(--muted)}
@@ -309,7 +309,7 @@ footer{padding:4rem 5rem;border-top:1px solid var(--line);position:relative;z-in
 
 <nav class="nav" id="nav">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-mark"><svg viewBox="0 0 14 14"><polyline points="2 10 7 4 12 10"/><line x1="7" y1="4" x2="7" y2="13"/></svg></div>
+    <div class="nav-logo-mark"><img src="ascend-logo.svg" alt="Ascend logo"></div>
     Ascend
   </a>
   <ul class="nav-links">
@@ -561,10 +561,10 @@ footer{padding:4rem 5rem;border-top:1px solid var(--line);position:relative;z-in
   <div class="primira-bg"></div>
   <div class="w">
     <div class="primira-inner rv">
-      <div class="primira-eyebrow">Parent Company</div>
+      <div class="primira-eyebrow">Startup Venture</div>
       <div class="primira-wordmark">Primira<span class="primira-dot">.</span></div>
-      <div class="primira-tagline">The venture behind Ascend</div>
-      <p class="primira-desc">Primira is a digital holding company building a portfolio of focused, excellence-driven agencies and products. Ascend Web Agency is the first. More verticals are on the way.</p>
+      <div class="primira-tagline">Fintech intelligence for modern operators</div>
+      <p class="primira-desc">Primira is a fintech startup building dynamic pricing agents for small and mid-sized businesses. Its systems help teams adapt pricing, margins, and offers with sharper data signals and less manual guesswork.</p>
       <div class="primira-badge">
         <span class="primira-badge-dot"></span>
         Coming Soon
@@ -584,7 +584,7 @@ footer{padding:4rem 5rem;border-top:1px solid var(--line);position:relative;z-in
 <footer>
   <div class="foot-row">
     <a href="#" class="foot-logo">
-      <div class="foot-logo-m"><svg viewBox="0 0 14 14"><polyline points="2 10 7 4 12 10"/><line x1="7" y1="4" x2="7" y2="13"/></svg></div>
+      <div class="foot-logo-m"><img src="ascend-logo.svg" alt="Ascend logo"></div>
       Ascend Web Agency
     </a>
     <nav class="foot-links">

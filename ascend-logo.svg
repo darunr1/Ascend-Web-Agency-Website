@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 45 372 380" role="img" aria-labelledby="title">
+  <title id="title">Ascend connected hexagon logo</title>
   <defs>
     <linearGradient id="hexFill" x1="86" y1="410" x2="322" y2="78" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#061a94"/>
